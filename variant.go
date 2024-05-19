@@ -81,13 +81,8 @@ type Variant struct {
 }
 
 type presentmentPrices struct {
-	Price          *presentmentPrice `json:"price,omitempty"`
-	CompareAtPrice *presentmentPrice `json:"compare_at_price,omitempty"`
-}
-
-type presentmentPrice struct {
-	Amount       string `json:"amount,omitempty"`
-	CurrencyCode string `json:"currency_code,omitempty"`
+	Price          *AmountSetEntry `json:"price,omitempty"`
+	CompareAtPrice *AmountSetEntry `json:"compare_at_price,omitempty"`
 }
 
 // VariantResource represents the result from the variants/X.json endpoint

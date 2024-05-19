@@ -597,12 +597,14 @@ const (
 )
 
 type RefundLineItem struct {
-	Id         uint64           `json:"id,omitempty"`
-	Quantity   int              `json:"quantity,omitempty"`
-	LineItemId uint64           `json:"line_item_id,omitempty"`
-	LineItem   *LineItem        `json:"line_item,omitempty"`
-	Subtotal   *decimal.Decimal `json:"subtotal,omitempty"`
-	TotalTax   *decimal.Decimal `json:"total_tax,omitempty"`
+	Id          uint64           `json:"id,omitempty"`
+	Quantity    int              `json:"quantity,omitempty"`
+	LineItemId  uint64           `json:"line_item_id,omitempty"`
+	LineItem    *LineItem        `json:"line_item,omitempty"`
+	Subtotal    *decimal.Decimal `json:"subtotal,omitempty"`
+	TotalTax    *decimal.Decimal `json:"total_tax,omitempty"`
+	SubTotalSet *AmountSet       `json:"subtotal_set,omitempty"`
+	TotalTaxSet *AmountSet       `json:"total_tax_set,omitempty"`
 }
 
 // List orders
