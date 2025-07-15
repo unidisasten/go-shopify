@@ -294,6 +294,7 @@ const (
 type Order struct {
 	Id                       uint64                  `json:"id,omitempty"`
 	Name                     string                  `json:"name,omitempty"`
+	PoNumber                 string                  `json:"po_number,omitempty"`
 	Email                    string                  `json:"email,omitempty"`
 	CreatedAt                *time.Time              `json:"created_at,omitempty"`
 	UpdatedAt                *time.Time              `json:"updated_at,omitempty"`

@@ -61,15 +61,15 @@ const (
 type Product struct {
 	Id                             uint64          `json:"id,omitempty"`
 	Title                          string          `json:"title,omitempty"`
-	BodyHTML                       string          `json:"body_html,omitempty"`
+	BodyHTML                       string          `json:"body_html"`
 	Vendor                         string          `json:"vendor,omitempty"`
-	ProductType                    string          `json:"product_type,omitempty"`
+	ProductType                    string          `json:"product_type"`
 	Handle                         string          `json:"handle,omitempty"`
 	CreatedAt                      *time.Time      `json:"created_at,omitempty"`
 	UpdatedAt                      *time.Time      `json:"updated_at,omitempty"`
 	PublishedAt                    *time.Time      `json:"published_at,omitempty"`
 	PublishedScope                 string          `json:"published_scope,omitempty"`
-	Tags                           string          `json:"tags,omitempty"`
+	Tags                           string          `json:"tags"`
 	Status                         ProductStatus   `json:"status,omitempty"`
 	Options                        []ProductOption `json:"options,omitempty"`
 	Variants                       []Variant       `json:"variants,omitempty"`

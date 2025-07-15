@@ -61,7 +61,7 @@ type Variant struct {
 	Price                *decimal.Decimal       `json:"price,omitempty"`
 	CompareAtPrice       *decimal.Decimal       `json:"compare_at_price,omitempty"`
 	FulfillmentService   string                 `json:"fulfillment_service,omitempty"`
-	InventoryManagement  string                 `json:"inventory_management,omitempty"`
+	InventoryManagement  string                 `json:"inventory_management"`
 	InventoryItemId      uint64                 `json:"inventory_item_id,omitempty"`
 	Option1              string                 `json:"option1,omitempty"`
 	Option2              string                 `json:"option2,omitempty"`
